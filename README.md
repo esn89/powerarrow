@@ -1,7 +1,7 @@
-Awesome Powerarrow theme for 3.5
+PowerArrow theme for Awesome 3.5
 ================================
 
-This is a fork of [Romockee's Powerarrow theme][romockee], implemented for
+This is a fork of [Romockee's PowerArrow theme][romockee], implemented for
 [Awesome-WM][awesome] 3.5 by [esn89][esn89].
 
 **See also the [dark branch](../../tree/dark) for an alternate dark color scheme!**
@@ -9,54 +9,56 @@ This is a fork of [Romockee's Powerarrow theme][romockee], implemented for
 Notes
 -----
 
-The enormous right-click menu from [Romockee's original][romockee] has not been
-included. It is not difficult to implement, it was simply deemed unnecessary as
-most people won't use the majority of it.
-
 This fork of PowerArrow aims to be as light as possible both in terms of code
-and it's desktop interface.
+and it's desktop interface.  The enormous right-click menu from [Romockee's
+original][romockee] has not been included in this fork. It is not difficult to
+implement, it was simply deemed unnecessary as most people won't use the
+majority of it.
 
 Installation
 ------------
 
 Prerequisites:
+
 * [Lua-oocairo](http://luaforge.net/projects/oocairo/)
   ([AUR](https://aur.archlinux.org/packages/lua-oocairo/))
 * [Vicious](http://awesome.naquadah.org/wiki/Vicious)
   ([AUR](https://aur.archlinux.org/packages/vicious))
 
 In your terminal:
+
 * `git clone https://github.com/esn89/powerarrow.git`
 * `cd powerarrow/`
 * `cp -R awesome ~/.config/`
 
 Todo:
+
 * In the themes.lua, please change the $USER to yourself.
 * In the rc.lua, change the browser and terminal to the one you are using.
 * In the rc.lua at line 147, 149 change the wireless and ethernet interfaces to
   your own.  (You can find out what the name is by running `iwconfig` in your
   terminal
 
-**Beware, some of the hotkeys/key-bindings are from my rc.lua, so if something
-that you are used to pressing doesn't work, check my global keys**
+**Beware, some of the hotkeys/key-bindings are from [esn89's][esn89] rc.lua, so
+if something that you are used to pressing doesn't work, check the global keys**
 
-What works in my version so far
--------------------------------
+What works so far
+-----------------
 
-* The layout in general (powerline)
+* The layout in general (ala powerline)
 * Clock
-* Wireless icon and data sent/received indicator (improved)
+* Wireless icon and data sent/received indicator (improved)  
+
+  Uses wicd as the network client, if you are not using that, you should
+  edit out the wicd field, otherwise you will get errors.
 * Battery
 * Volume (improved)
 * CPU widget
 * MEM widget
 * GMail widget (improved)
 
-(I am using wicd for my network client, if you are not using that, you should
-edit out the wicd field, otherwise you will get errors)
-
-Some differences:
------------------
+Some differences
+----------------
 
 * Took out the binary clock, due to the fact that it takes me way to long to
   read.
@@ -72,26 +74,25 @@ Some differences:
   sound level as a speaker (see screenshots for example).
 * Mail how has a notifier with gmail integration (see screenshots for example).
 
-How to set up  gmail integration:
----------------------------------
+How to set up  gmail integration
+--------------------------------
 
 Gmail integration:
+
 * In your home directory, created a file named .netrc
 * In this file you will put your login details, it should look like this:
   `machine mail.google.com login youremail@gmail.com password
   yoursecretpassword`  (without the quotations of course)
 
-Future Direction:
------------------
+Future Direction
+----------------
 
-* Looking to implement a calendar by turning the date textbox into a button
-* Will implement a battery widget that actually corresponds to the amount of
-  battery you have left. (I am huge fan/advocate of icons that are dynamic, can
-  change and ones that reflect on current status)
-* Powerarrow dark!
+* Implement a calendar by turning the date textbox into a button
+* Implement a battery widget that actually corresponds to the amount of
+  battery you have left
 
-Screenshots:
-------------
+Screenshots
+-----------
 
 ![light theme screenshot](http://i.imgur.com/q1o4PRU.png)
 
