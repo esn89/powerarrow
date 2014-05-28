@@ -1,16 +1,13 @@
 Awesome Powerarrow theme for 3.5
 ================================
 
-:Original Author: https://github.com/romockee/powerarrow
+:Original project: https://github.com/romockee/powerarrow
+:Lots of improvements: https://github.com/esn89/powerarrow
 
-**Currently working on the Powerarrow-dark**
+**See also the dark branch!**
 
-:Find it here: https://github.com/esn89/powerarrow-dark
-
-This is my fork of Romockee's Powerarrow theme, implemented
-for Awesome-WM 3.5
-This project is now in a stage where
-90% of the widgets work
+This is a fork of Romockee's Powerarrow theme, implemented for Awesome-WM 3.5. 
+This project is now in a stage where 90% of the widgets work.
 
 Notes
 -----
