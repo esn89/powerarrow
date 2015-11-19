@@ -190,7 +190,7 @@ fsicon:set_image(beautiful.fsicon)
 ----{{--| Volume / volume icon |----------
 volume = wibox.widget.textbox()
 vicious.register(volume, vicious.widgets.volume,
-'<span background="#4B3B51" font="Inconsolata 11"><span font="Inconsolata 11" color="#EEEEEE"> Vol:$1 </span></span>', 0.3, "Master")
+'<span background="#4B3B51" font="Inconsolata 11"><span font="Inconsolata 11" color="#EEEEEE"> Vol:$1 </span></span>', 10, "Master")
 
 volumeicon = wibox.widget.imagebox()
 vicious.register(volumeicon, vicious.widgets.volume, function(widget, args)
@@ -206,7 +206,7 @@ vicious.register(volumeicon, vicious.widgets.volume, function(widget, args)
         volumeicon:set_image(beautiful.vollow)
     end
 
-end, 0.3, "Master")
+end, 10, "Master")
 
 --{{---| CPU / sensors widget |-----------
 cpuwidget = wibox.widget.textbox()
