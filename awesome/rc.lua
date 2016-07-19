@@ -42,8 +42,7 @@ end
 
 --{{---| Theme | -------------------------------------
 
--- Todo:  Please change the "ep" to your $USER
-config_dir = ("/home/ep/.config/awesome/")
+config_dir = (os.getenv("HOME") .. "/.config/awesome/")
 themes_dir = (config_dir .. "/powerarrowf")
 
 beautiful.init(themes_dir .. "/theme.lua")
